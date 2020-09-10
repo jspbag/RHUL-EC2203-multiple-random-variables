@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <title>Distributions</title>
+  <title>Multiple random variables and their distributions</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -511,6 +511,18 @@ EC2203 | Royal Holloway | 2020/21
 <li><p>The <strong>joint probability density function (PDF)</strong> is the derivative of the joint CDF</p>
 <div class="box">
 <p><span class="math display">\[f_{XY}(x,y) = \frac{\partial^2}{\partial x \partial y} F_{XY}(x,y)\]</span></p>
+</div></li>
+</ul>
+</section><section id="marginal-and-conditional-pdfs" class="slide level2">
+<h2>Marginal and conditional PDFs</h2>
+<ul>
+<li><p>The <strong>marginal PDF</strong> of <span class="math inline">\(Y\)</span> is</p>
+<div class="box">
+<p><span class="math display">\[f_Y(y) = \int_x f_{XY}(x,y) dx\]</span></p>
+</div></li>
+<li><p>The <strong>conditional PDF</strong> of <span class="math inline">\(Y\)</span> given <span class="math inline">\(X=x\)</span> is</p>
+<div class="box">
+<p><span class="math display">\[f_{Y|X}(y|x) = \frac{f_{XY}(x,y)}{f_X(x)}\]</span></p>
 </div></li>
 </ul>
 <!-- ## Interpreting the joint PDF of continuous random variables  -->
