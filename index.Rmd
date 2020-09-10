@@ -1,5 +1,5 @@
 ---
-pagetitle: Distributions
+pagetitle: Multiple random variables and their distributions
 output: 
   revealjs::revealjs_presentation:
     incremental: false
@@ -97,6 +97,21 @@ Based on Stock and Watson, ch. 2
   $$f_{XY}(x,y) = \frac{\partial^2}{\partial x \partial y} F_{XY}(x,y)$$
   </div> 
   
+## Marginal and conditional PDFs 
+
+- The **marginal PDF** of $Y$ is
+
+  <div class="box">
+  $$f_Y(y) = \int_x f_{XY}(x,y) dx$$
+  </div>
+
+
+- The **conditional PDF** of $Y$ given $X=x$ is
+
+  <div class="box">
+  $$f_{Y|X}(y|x) = \frac{f_{XY}(x,y)}{f_X(x)}$$
+  </div>
+
 <!-- ## Interpreting the joint PDF of continuous random variables  -->
 
 <!-- - The area under the **joint PDF** b/w any two sets of points---$a$ and $b$, and $c$ and $d$---gives the probability that $X$ falls b/w $a$ and $b$, and $Y$ falls b/w $c$ and $d$:  -->
@@ -107,15 +122,15 @@ Based on Stock and Watson, ch. 2
 
 ## Summary
 
-- The joint probability mass function (PMF) gives the probability that, simultaneously, $X=x$ and $Y=y$
+- The joint CDF of $X$ and $Y$ gives the probability that, simultaneously, $X \leq x$ and $Y \leq y$
 
-  The joint cumulative distribution function (CDF) gives the probability that, simultaneously, $X \leq x$ and $Y \leq y$
+- The joint PMF for discrete $X$ and $Y$ gives the probability that, simultaneously, $X=x$ and $Y=y$
 
-- The marginal PMF of $X$ is the probability that $X = x$, irrespective of the value of other random variables
+- The marginal PMF of discrete $X$ is the PMF of $X$, irrespective of the value of $Y$
 
-- The conditional PMF of $Y$ given $X = x$ gives the probability that $Y = y$ when $X = x$
+- The conditional PMF of discrete $Y$ given $X = x$ gives the PMF pf $Y$ when $X = x$
 
-- The joint, marginal, and conditional PDFs (and) are defined analogously for continuous random variables
+- We can also define joint, marginal, and conditional PDFs for continuous random variables
 
 
 
