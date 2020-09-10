@@ -128,7 +128,7 @@ Based on Stock and Watson, ch. 2
 
 - The marginal PMF of discrete $X$ is the PMF of $X$, irrespective of the value of $Y$
 
-- The conditional PMF of discrete $Y$ given $X = x$ gives the PMF pf $Y$ when $X = x$
+- The conditional PMF of discrete $Y$ given $X = x$ gives the PMF of $Y$ when $X = x$
 
 - We can also define joint, marginal, and conditional PDFs for continuous random variables
 
